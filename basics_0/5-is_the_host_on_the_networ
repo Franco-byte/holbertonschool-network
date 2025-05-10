@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Verificar si se pasó un argumento
+if [ -z "$1" ]; then
+    echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+    exit 1
+fi
+
+# Ejecutar ping 5 veces
+ping -c 5 "$1"
