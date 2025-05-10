@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Todos los sockets en estado LISTEN
+
+netstat -l -p 
